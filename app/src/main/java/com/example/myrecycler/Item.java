@@ -1,4 +1,4 @@
-package com.example.theapp2024;
+package com.example.myrecycler;
 
 public class Item {
     private String name;

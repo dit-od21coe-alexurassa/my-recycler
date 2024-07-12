@@ -19,5 +19,5 @@ dependencyResolutionManagement {
     }
 }
 
-rootProject.name = "TheApp2024"
+rootProject.name = "MyRecycler"
 include ':app'

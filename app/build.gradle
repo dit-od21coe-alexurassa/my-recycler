@@ -3,12 +3,12 @@ plugins {
 }
 
 android {
-    namespace 'com.example.theapp2024'
+    namespace 'com.example.myrecycler'
     compileSdk 34
 
     defaultConfig {
-        applicationId "com.example.theapp2024"
-        minSdk 34
+        applicationId "com.example.myrecycler"
+        minSdk 30
         targetSdk 34
         versionCode 1
         versionName "1.0"

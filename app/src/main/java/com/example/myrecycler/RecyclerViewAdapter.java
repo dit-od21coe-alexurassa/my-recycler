@@ -1,4 +1,4 @@
-package com.example.theapp2024;
+package com.example.myrecycler;
 
 import android.view.LayoutInflater;
 import android.view.View;
@@ -42,13 +42,11 @@ public class RecyclerViewAdapter extends RecyclerView.Adapter<RecyclerViewAdapte
     static class ViewHolder extends RecyclerView.ViewHolder {
         ImageView imageView;
         TextView textViewName;
-        CheckBox checkBox;
 
         ViewHolder(View itemView) {
             super(itemView);
-            imageView = itemView.findViewById(R.id.imageView);
-            textViewName = itemView.findViewById(R.id.textViewName);
-            checkBox = itemView.findViewById(R.id.checkBox);
+            imageView = itemView.findViewById(R.id.attractionImage);
+            textViewName = itemView.findViewById(R.id.attractionName);
         }
     }
 }

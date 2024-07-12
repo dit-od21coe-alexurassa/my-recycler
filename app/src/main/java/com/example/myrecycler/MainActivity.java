@@ -1,4 +1,4 @@
-package com.example.theapp2024;
+package com.example.myrecycler;
 
 import android.os.Bundle;
 
@@ -17,10 +17,12 @@ public class MainActivity extends AppCompatActivity {
 
     private RecyclerView recyclerView;
 
-    private String[] names = {"Brian", "David", "Ian", "Kelvin", "Rachel", "Anna", "James", "Emily", "Sophia", "Michael"};
+    private String[] names = {
+            "Mount Kilimanjaro", "Manyara Park", "A snip of Serengeti National park", "Serengeti national park zebras",
+    "Mbeya landscapes", "Waterfalls"};
     private int[] images = {
-            R.drawable.brian, R.drawable.david, R.drawable.ian, R.drawable.kelvin, R.drawable.rachel,
-            R.drawable.anna, R.drawable.james, R.drawable.emily, R.drawable.sophia, R.drawable.michael
+            R.drawable.mnt_kilimanjaro, R.drawable.tz_manyara_park, R.drawable.serengeti_snip, R.drawable.serengeti_zebras,
+            R.drawable.landscape1, R.drawable.tz_waterfall
     };
 
     @Override
@@ -28,11 +30,9 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         EdgeToEdge.enable(this);
         setContentView(R.layout.activity_main);
-        ViewCompat.setOnApplyWindowInsetsListener(findViewById(R.id.main), (v, insets) -> {
-            Insets systemBars = insets.getInsets(WindowInsetsCompat.Type.systemBars());
-            v.setPadding(systemBars.left, systemBars.top, systemBars.right, systemBars.bottom);
-            return insets;
-        });
+
+        setTitle("Tourist Attractions in Tanzania");
+
 
         recyclerView = findViewById(R.id.recyclerView);
 
